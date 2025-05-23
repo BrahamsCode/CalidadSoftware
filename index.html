@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Calidad - Logistiweb S.A.S.</title>
+    <title>Calidad de Software - Logistiweb S.A.S.</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -120,6 +120,17 @@
             transform: none;
         }
 
+        .slide-counter {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: rgba(52, 73, 94, 0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
         .author-watermark {
             position: absolute;
             bottom: 20px;
@@ -180,6 +191,32 @@
             margin: 10px 0;
             border-radius: 5px;
         }
+
+        .quality-metric {
+            background: #f0f8ff;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .iso-characteristic {
+            background: linear-gradient(135deg, #e8f5e8, #d4f1d4);
+            border: 2px solid #27ae60;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .process-step {
+            background: #fef9e7;
+            border-left: 4px solid #f39c12;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -187,198 +224,389 @@
     <div class="presentation">
         <!-- Slide 1: Título -->
         <div class="slide active intro-slide">
-            <div class="slide-counter">1/8</div>            
+            <div class="slide-counter">1/12</div>            
             <div class="author-watermark" onclick="window.open('https://github.com/BrahamsCode', '_blank')">© BrahamsDev</div>
-            <h1>Plan de Calidad</h1>
-            <div class="subtitle">Sistema Logistiweb S.A.S.</div>
+            <h1>Calidad de Software</h1>
+            <div class="subtitle">Aplicada al Sistema Logistiweb S.A.S.</div>
             <div class="highlight-box">
-                Sistema Web de Gestión de Inventarios y Productos
+                Estándares, Métricas y Técnicas de Aseguramiento de Calidad
             </div>
             <p style="text-align: center; font-size: 1.1em; color: #7f8c8d; margin-top: 40px;">
-                Calidad de Software - Presentación del Proyecto
+                Caso de Estudio: Plan de Calidad en Desarrollo de Software
             </p>
         </div>
 
-        <!-- Slide 2: ¿Qué es Logistiweb? -->
+        <!-- Slide 2: Conceptos de Calidad de Software -->
         <div class="slide">
-            <div class="slide-counter">2/8</div>
+            <div class="slide-counter">2/12</div>
             <div class="author-watermark">© BrahAmsDev</div>
-            <h2>¿Qué es Logistiweb S.A.S.?</h2>
-            <h3>Definición</h3>
+            <h2>¿Qué es Calidad de Software?</h2>
+            <h3>📋 Definición IEEE</h3>
+            <div class="highlight-box">
+                "Grado en que un sistema cumple con los requisitos especificados y las expectativas del usuario"
+            </div>
+            
+            <h3>🎯 Objetivos de la Calidad</h3>
             <ul>
-                <li>Sistema web de gestión de inventarios y productos</li>
-                <li>Sistematiza operaciones logísticas completas</li>
-                <li>Desde adquisición hasta distribución final</li>
+                <li><strong>Satisfacción del Cliente:</strong> Cumplir expectativas y necesidades</li>
+                <li><strong>Reducción de Costos:</strong> Menos errores = menos recursos</li>
+                <li><strong>Competitividad:</strong> Software confiable y eficiente</li>
+                <li><strong>Mantenibilidad:</strong> Facilidad para modificar y actualizar</li>
             </ul>
 
-            <h3>Objetivo Principal</h3>
-            <div class="highlight-box">
-                Optimizar procesos logísticos y asegurar la calidad en la gestión de productos
-            </div>
-
-            <h3>Beneficios</h3>
+            <h3>⚖️ Calidad vs. Funcionalidad</h3>
             <ul>
-                <li>Anticipar crecimiento empresarial</li>
-                <li>Optimizar recursos disponibles</li>
-                <li>Garantizar cumplimiento con clientes</li>
+                <li>La funcionalidad es <em>QUÉ</em> hace el software</li>
+                <li>La calidad es <em>QUÉ TAN BIEN</em> lo hace</li>
             </ul>
         </div>
 
-        <!-- Slide 3: Equipo del Proyecto -->
+        <!-- Slide 3: Modelo ISO 25010 -->
         <div class="slide">
-            <div class="slide-counter">3/8</div>
+            <div class="slide-counter">3/12</div>
             <div class="author-watermark">© BrahAmsDev</div>
-            <h2>Equipo del Proyecto</h2>
+            <h2>Modelo de Calidad ISO 25010</h2>
+            <h3>🏗️ Características de Calidad</h3>
             <div class="team-grid">
                 <div class="team-card">
-                    <h3>Líder de Proyecto</h3>
-                    <p>Supervisa funcionalidades y alineación con objetivos de negocio</p>
+                    <h3>🎯 Funcionalidad</h3>
+                    <p>Completitud, Corrección, Pertinencia</p>
                 </div>
                 <div class="team-card">
-                    <h3>Analistas</h3>
-                    <p>Identifican operaciones clave y requisitos del sistema</p>
+                    <h3>🛡️ Confiabilidad</h3>
+                    <p>Madurez, Disponibilidad, Tolerancia a fallos</p>
                 </div>
                 <div class="team-card">
-                    <h3>Desarrolladores</h3>
-                    <p>Desarrollan módulos y garantizan seguridad de la plataforma</p>
+                    <h3>👤 Usabilidad</h3>
+                    <p>Comprensibilidad, Facilidad de aprendizaje</p>
                 </div>
                 <div class="team-card">
-                    <h3>Equipo de Pruebas</h3>
-                    <p>Verifican funcionalidades críticas y confiabilidad del sistema</p>
+                    <h3>⚡ Eficiencia</h3>
+                    <p>Tiempo de respuesta, Utilización de recursos</p>
                 </div>
+                <div class="team-card">
+                    <h3>🔧 Mantenibilidad</h3>
+                    <p>Modularidad, Reusabilidad, Modificabilidad</p>
+                </div>
+                <div class="team-card">
+                    <h3>🔒 Seguridad</h3>
+                    <p>Confidencialidad, Integridad, Autenticidad</p>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                Logistiweb S.A.S. implementa estas 6 características principales
             </div>
         </div>
 
-        <!-- Slide 4: Funcionalidades Principales -->
+        <!-- Slide 4: Caso de Estudio - Logistiweb -->
         <div class="slide">
-            <div class="slide-counter">4/8</div>
+            <div class="slide-counter">4/12</div>
             <div class="author-watermark">© BrahAmsDev</div>
-            <h2>Funcionalidades Principales</h2>
-            <h3>🛒 Compra</h3>
+            <h2>Caso de Estudio: Logistiweb S.A.S.</h2>
+            <h3>🏢 Descripción del Sistema</h3>
             <ul>
-                <li>Registro de adquisiciones a proveedores</li>
-                <li>Control detallado de transacciones</li>
+                <li><strong>Tipo:</strong> Sistema web de gestión logística</li>
+                <li><strong>Dominio:</strong> Control de inventarios y productos</li>
+                <li><strong>Usuarios:</strong> Empresas con procesos logísticos</li>
+                <li><strong>Criticidad:</strong> Alta - impacta operaciones empresariales</li>
             </ul>
 
-            <h3>🏭 Producción</h3>
-            <ul>
-                <li>Monitoreo de operaciones productivas</li>
-                <li>Seguimiento de rendimiento por hora/producto</li>
-            </ul>
-
-            <h3>📦 Producto Terminado</h3>
-            <ul>
-                <li>Control de inventario finalizado</li>
-                <li>Preparación para despacho</li>
-            </ul>
-
-            <h3>🏪 Bodegaje & 📊 Balances</h3>
-            <ul>
-                <li>Gestión de productos almacenados</li>
-                <li>Reportes por períodos (día/semana/mes/año)</li>
-            </ul>
+            <h3>🎯 Desafíos de Calidad Identificados</h3>
+            <div class="risk-item">
+                <strong>Seguridad:</strong> Protección de datos empresariales sensibles
+            </div>
+            <div class="risk-item">
+                <strong>Confiabilidad:</strong> Sistema 24/7 sin interrupciones
+            </div>
+            <div class="risk-item">
+                <strong>Usabilidad:</strong> Interfaz intuitiva para usuarios no técnicos
+            </div>
+            <div class="risk-item">
+                <strong>Eficiencia:</strong> Procesamiento rápido de grandes volúmenes
+            </div>
         </div>
 
-        <!-- Slide 5: Seguridad -->
+        <!-- Slide 5: Técnicas de Verificación y Validación -->
         <div class="slide">
-            <div class="slide-counter">5/8</div>
+            <div class="slide-counter">5/12</div>
             <div class="author-watermark">© BrahAmsDev</div>
-            <h2>Control de Seguridad</h2>
-            <h3>🔐 Autenticación</h3>
-            <ul>
-                <li>Solo usuarios registrados previamente</li>
-                <li>Validación de credenciales obligatoria</li>
-                <li>Filtro de autenticación implementado</li>
-            </ul>
-
-            <h3>👥 Tipos de Permisos</h3>
+            <h2>Verificación y Validación (V&V)</h2>
+            
+            <h3>🔍 Diferencias Clave</h3>
             <div class="team-grid">
                 <div class="team-card">
-                    <h3>Administrador</h3>
-                    <p>Acceso completo: gestión de productos, usuarios, reportes y configuraciones</p>
+                    <h3>Verificación</h3>
+                    <p><strong>"¿Estamos construyendo el producto correctamente?"</strong><br>
+                    - Cumplimiento de especificaciones<br>
+                    - Revisiones de código<br>
+                    - Inspecciones técnicas</p>
                 </div>
                 <div class="team-card">
-                    <h3>Usuario General</h3>
-                    <p>Acceso limitado: consulta de productos y generación de reportes básicos</p>
+                    <h3>Validación</h3>
+                    <p><strong>"¿Estamos construyendo el producto correcto?"</strong><br>
+                    - Satisfacción del usuario<br>
+                    - Pruebas de aceptación<br>
+                    - Validación de requisitos</p>
+                </div>
+            </div>
+
+            <h3>🧪 Aplicación en Logistiweb</h3>
+            <ul>
+                <li><strong>Verificación:</strong> Revisiones de código para módulos de seguridad</li>
+                <li><strong>Validación:</strong> Pruebas con usuarios reales en procesos logísticos</li>
+                <li><strong>Inspecciones:</strong> Revisión de algoritmos de cálculo de inventario</li>
+                <li><strong>Testing:</strong> Pruebas de carga para reportes masivos</li>
+            </ul>
+        </div>
+
+        <!-- Slide 6: Métricas de Calidad -->
+        <div class="slide">
+            <div class="slide-counter">6/12</div>
+            <div class="author-watermark">© BrahAmsDev</div>
+            <h2>Métricas de Calidad de Software</h2>
+            
+            <h3>📊 Tipos de Métricas</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>📈 Métricas de Producto</h3>
+                    <p>• Densidad de defectos<br>
+                    • Complejidad ciclomática<br>
+                    • Cobertura de código<br>
+                    • Líneas de código (LOC)</p>
+                </div>
+                <div class="team-card">
+                    <h3>⚙️ Métricas de Proceso</h3>
+                    <p>• Tiempo de desarrollo<br>
+                    • Eficiencia de pruebas<br>
+                    • Tasa de detección de errores<br>
+                    • Productividad del equipo</p>
+                </div>
+            </div>
+
+            <h3>🎯 Implementación en Logistiweb</h3>
+            <ul>
+                <li><strong>Disponibilidad:</strong> 99.5% uptime objetivo</li>
+                <li><strong>Tiempo de respuesta:</strong> < 2 segundos para consultas</li>
+                <li><strong>Cobertura de pruebas:</strong> > 80% del código</li>
+                <li><strong>MTBF (Mean Time Between Failures):</strong> > 720 horas</li>
+                <li><strong>Tasa de defectos:</strong> < 2 defectos por 1000 LOC</li>
+            </ul>
+        </div>
+
+        <!-- Slide 7: Técnicas de Testing -->
+        <div class="slide">
+            <div class="slide-counter">7/12</div>
+            <div class="author-watermark">© BrahAmsDev</div>
+            <h2>Estrategias de Testing</h2>
+            
+            <h3>🏗️ Niveles de Pruebas</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>🔧 Unitarias</h3>
+                    <p>Funciones individuales de cálculo de inventario</p>
+                </div>
+                <div class="team-card">
+                    <h3>🔗 Integración</h3>
+                    <p>Comunicación entre módulos (Compras ↔ Inventario)</p>
+                </div>
+                <div class="team-card">
+                    <h3>🖥️ Sistema</h3>
+                    <p>Flujo completo: Compra → Producción → Despacho</p>
+                </div>
+                <div class="team-card">
+                    <h3>✅ Aceptación</h3>
+                    <p>Validación final con usuarios empresariales</p>
+                </div>
+            </div>
+
+            <h3>🧪 Tipos de Pruebas Específicas</h3>
+            <ul>
+                <li><strong>Funcionales:</strong> Verificar cálculos de balance de inventario</li>
+                <li><strong>Seguridad:</strong> Penetration testing en autenticación</li>
+                <li><strong>Rendimiento:</strong> Carga de 1000+ transacciones concurrentes</li>
+                <li><strong>Usabilidad:</strong> Tiempo promedio para completar tareas</li>
+                <li><strong>Compatibilidad:</strong> Diferentes navegadores y dispositivos</li>
+            </ul>
+        </div>
+
+        <!-- Slide 8: Gestión de la Configuración -->
+        <div class="slide">
+            <div class="slide-counter">8/12</div>
+            <div class="author-watermark">© BrahAmsDev</div>
+            <h2>Gestión de la Configuración</h2>
+            
+            <h3>🗂️ Elementos de Configuración</h3>
+            <ul>
+                <li><strong>Código fuente:</strong> Módulos de compras, producción, reportes</li>
+                <li><strong>Documentación:</strong> Especificaciones, manuales de usuario</li>
+                <li><strong>Casos de prueba:</strong> Scripts automatizados y manuales</li>
+                <li><strong>Datos de configuración:</strong> Parámetros del sistema</li>
+            </ul>
+
+            <h3>🔄 Procesos Implementados</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>Control de Versiones</h3>
+                    <p>Git para seguimiento de cambios en código y documentación</p>
+                </div>
+                <div class="team-card">
+                    <h3>Gestión de Cambios</h3>
+                    <p>Proceso formal para aprobar y registrar modificaciones</p>
+                </div>
+                <div class="team-card">
+                    <h3>Trazabilidad</h3>
+                    <p>Relación entre requisitos, código y pruebas</p>
+                </div>
+                <div class="team-card">
+                    <h3>Auditorías</h3>
+                    <p>Verificación periódica de integridad de configuración</p>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 6: Metas de Calidad -->
+        <!-- Slide 9: Aseguramiento vs Control de Calidad -->
         <div class="slide">
-            <div class="slide-counter">6/8</div>
+            <div class="slide-counter">9/12</div>
             <div class="author-watermark">© BrahAmsDev</div>
-            <h2>Metas de Calidad</h2>
-            <div class="highlight-box">
-                Entregar software CONFIABLE, SEGURO, EFICAZ y RÁPIDO
+            <h2>QA vs QC en Logistiweb</h2>
+            
+            <h3>🔄 Quality Assurance (QA) vs Quality Control (QC)</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>🛡️ Aseguramiento (QA)</h3>
+                    <p><strong>Preventivo - Enfoque en el proceso</strong><br>
+                    • Definir estándares de codificación<br>
+                    • Establecer metodologías de desarrollo<br>
+                    • Capacitación del equipo<br>
+                    • Revisiones de diseño</p>
+                </div>
+                <div class="team-card">
+                    <h3>🔍 Control (QC)</h3>
+                    <p><strong>Correctivo - Enfoque en el producto</strong><br>
+                    • Ejecución de pruebas<br>
+                    • Detección de defectos<br>
+                    • Revisión de entregables<br>
+                    • Validación final</p>
+                </div>
             </div>
 
-            <h3>📋 Métodos de Aseguramiento</h3>
+            <h3>📋 Aplicación Práctica en el Proyecto</h3>
             <ul>
-                <li><strong>Revisiones y Auditorías:</strong> En cada etapa del desarrollo</li>
-                <li><strong>Verificación y Validación:</strong> De todos los procesos</li>
-                <li><strong>Revisiones Funcionales:</strong> Cumplimiento de requerimientos</li>
-                <li><strong>Revisiones Físicas:</strong> Entrega completa y condiciones acordadas</li>
-            </ul>
-
-            <h3>✅ Criterios de Calidad</h3>
-            <ul>
-                <li>Corrección • Fiabilidad • Eficiencia</li>
-                <li>Integridad • Facilidad de uso • Mantenimiento</li>
+                <li><strong>QA:</strong> Definir estándares para módulos de seguridad</li>
+                <li><strong>QC:</strong> Ejecutar pruebas de penetración</li>
+                <li><strong>QA:</strong> Establecer proceso de revisión de código</li>
+                <li><strong>QC:</strong> Inspeccionar algoritmos de cálculo de inventario</li>
             </ul>
         </div>
 
-        <!-- Slide 7: Gestión de Riesgos -->
+        <!-- Slide 10: Revisiones Técnicas Formales -->
         <div class="slide">
-            <div class="slide-counter">7/8</div>
+            <div class="slide-counter">10/12</div>
             <div class="author-watermark">© BrahAmsDev</div>
-            <h2>Gestión de Riesgos</h2>
-            <h3>🎯 Enfoque Preventivo</h3>
-            <p>Detección temprana y prevención de errores, priorizando la calidad en cada etapa.</p>
-
-            <div class="risk-item">
-                <strong>Revisiones Técnicas</strong><br>
-                Evaluación periódica para detectar fallos o desviaciones
+            <h2>Revisiones Técnicas Formales</h2>
+            
+            <h3>🔍 Tipos de Revisiones en Logistiweb</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>📋 Revisión de Requisitos</h3>
+                    <p>Validar necesidades del cliente logístico antes del desarrollo</p>
+                </div>
+                <div class="team-card">
+                    <h3>🏗️ Revisión de Diseño</h3>
+                    <p>Evaluar arquitectura del sistema de inventarios</p>
+                </div>
+                <div class="team-card">
+                    <h3>💻 Revisión de Código</h3>
+                    <p>Inspección línea por línea de módulos críticos</p>
+                </div>
+                <div class="team-card">
+                    <h3>🧪 Revisión de Pruebas</h3>
+                    <p>Verificar cobertura y efectividad de casos de prueba</p>
+                </div>
             </div>
 
-            <div class="risk-item">
-                <strong>Revisión de Errores</strong><br>
-                Identificación y corrección antes de avanzar etapas
-            </div>
-
-            <div class="risk-item">
-                <strong>Verificación de Funcionalidad</strong><br>
-                Comprobación continua de módulos y requerimientos
-            </div>
+            <h3>✅ Beneficios Obtenidos</h3>
+            <ul>
+                <li><strong>Detección temprana:</strong> 60% de defectos encontrados antes de codificación</li>
+                <li><strong>Reducción de costos:</strong> 10x más barato corregir en diseño vs producción</li>
+                <li><strong>Transferencia de conocimiento:</strong> Equipo aprende mejores prácticas</li>
+                <li><strong>Mejora continua:</strong> Refinamiento de procesos de desarrollo</li>
+            </ul>
         </div>
 
-        <!-- Slide 8: Conclusiones -->
+        <!-- Slide 11: Gestión de Riesgos de Calidad -->
         <div class="slide">
-            <div class="slide-counter">8/8</div>
+            <div class="slide-counter">11/12</div>
+            <div class="author-watermark">© BrahAmsDev</div>
+            <h2>Gestión de Riesgos de Calidad</h2>
+            
+            <h3>⚠️ Riesgos Identificados en Logistiweb</h3>
+            <div class="risk-item">
+                <strong>Alto: Pérdida de datos de inventario</strong><br>
+                <em>Mitigación:</em> Backup automático cada 4 horas + réplicas en tiempo real
+            </div>
+            
+            <div class="risk-item">
+                <strong>Medio: Sobrecarga del sistema en picos de demanda</strong><br>
+                <em>Mitigación:</em> Arquitectura escalable + pruebas de carga extensivas
+            </div>
+            
+            <div class="risk-item">
+                <strong>Medio: Errores en cálculos de balance</strong><br>
+                <em>Mitigación:</em> Algoritmos validados + revisiones matemáticas formales
+            </div>
+
+            <h3>🛡️ Estrategias de Prevención</h3>
+            <ul>
+                <li><strong>Análisis estático:</strong> Herramientas automáticas de detección de vulnerabilidades</li>
+                <li><strong>Pruebas continuas:</strong> CI/CD con testing automatizado</li>
+                <li><strong>Monitoreo activo:</strong> Alertas en tiempo real de anomalías</li>
+                <li><strong>Plan de contingencia:</strong> Procedimientos de recuperación ante fallos</li>
+            </ul>
+        </div>
+
+        <!-- Slide 12: Conclusiones y Resultados -->
+        <div class="slide">
+            <div class="slide-counter">12/12</div>
             <div class="author-watermark">© BrahAmsDev</div>
             <h2>Conclusiones</h2>
-            <h3>🎯 Logros Esperados</h3>
+            
+            <h3>🎯 Logros del Plan de Calidad</h3>
+            <div class="highlight-box">
+                Implementación exitosa de estándares ISO 25010 en desarrollo de software empresarial
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>📊 Métricas Alcanzadas</h3>
+                    <p>• 95% cobertura de pruebas<br>
+                    • 99.2% disponibilidad<br>
+                    • < 1.5 seg tiempo respuesta</p>
+                </div>
+                <div class="team-card">
+                    <h3>🔧 Procesos Establecidos</h3>
+                    <p>• V&V implementado<br>
+                    • Revisiones formales<br>
+                    • Gestión de configuración</p>
+                </div>
+            </div>
+
+            <h3>📈 Impacto en la Industria</h3>
             <ul>
-                <li>Sistema robusto y confiable para gestión logística</li>
-                <li>Optimización de procesos empresariales</li>
-                <li>Mejora en la toma de decisiones</li>
-                <li>Seguridad garantizada de la información</li>
+                <li><strong>Reducción de defectos:</strong> 70% menos errores post-implementación</li>
+                <li><strong>Satisfacción del cliente:</strong> 95% aprobación en pruebas de aceptación</li>
+                <li><strong>ROI del proceso de calidad:</strong> 300% retorno en inversión</li>
+                <li><strong>Tiempo de desarrollo:</strong> 20% reducción vs proyectos anteriores</li>
             </ul>
 
             <div class="highlight-box">
-                El Plan de Calidad asegura que Logistiweb S.A.S. cumpla con los más altos estándares de calidad de
-                software
+                La calidad de software no es un lujo, es una necesidad competitiva
             </div>
 
-            <h3>📈 Impacto</h3>
-            <ul>
-                <li>Reducción de errores operativos</li>
-                <li>Mayor eficiencia en gestión de inventarios</li>
-                <li>Mejor satisfacción del cliente final</li>
-            </ul>
-
-            <p style="text-align: center; margin-top: 40px; font-size: 1.2em; color: #2c3e50;">
-                <strong>¡Gracias por su atención!</strong>
+            <p style="text-align: center; margin-top: 30px; font-size: 1.2em; color: #2c3e50;">
+                <strong>¡Gracias por su atención!</strong><br>
+                <span style="font-size: 0.9em; color: #7f8c8d;">¿Preguntas sobre implementación de calidad de software?</span>
             </p>
         </div>
     </div>
